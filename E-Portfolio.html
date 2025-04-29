@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio | Blade Lindner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="" class="text-xl font-bold gradient-text">Blade Lindner</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="E-Portfolio.html" class="nav-link text-gray-700 hover:text-blue-500 transition">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-500 transition">About</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-blue-500 transition">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-500 transition">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-500 transition">Contact</a>
+                    <a href="BladeLindnerResume.pdf" class="nav-link text-gray-700 hover:text-blue-500 transition">Resume</a>
+                    <a href="http://catalog.southeasttech.edu/preview_program.php?catoid=17&poid=2004&hl=%22programming%22" class="nav-link text-gray-700 hover:text-blue-500 transition">Curriculum</a>
+                    <a href="CIS_Syllabi.html" class="nav-link text-gray-700 hover:text-blue-500 transition">Syllabi</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="E-Portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">About</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Skills</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Projects</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Contact</a>
+                <a href="BladeLindnerResume.pdf" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Resume</a>
+                <a href="http://catalog.southeasttech.edu/preview_program.php?catoid=17&poid=2004&hl=%22programming%22" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Curriculum</a>
+                <a href="CIS_Syllabi.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="gradient-text">Blade Lindner</span></h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600">Frontend Developer & UI Designer</h2>
+                <p class="text-lg text-gray-600 mb-8">I create beautiful, responsive websites and applications with a focus on user experience.</p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300">View My Work</a>
+                    <a href="#contact" class="border-2 border-blue-500 text-blue-500 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-all duration-300">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center animate-fade-in" style="animation-delay: 0.2s;">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 flex items-center justify-center">
+                        <img src="Photo.png" 
+                             alt="Blade Lindner" 
+                             class="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover border-4 border-white shadow-lg">
+                    </div>
+                    <div class="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-lg">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-code text-blue-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">2+ Years</p>
+                                <p class="text-sm text-gray-500">Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">Get to know more about who I am and what I do</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                <div class="relative">
+                    <img src="Photo.png" 
+                         alt="Blade Lindner" 
+                         class="w-64 h-64 rounded-lg object-cover shadow-lg">
+                    <div class="absolute -bottom-5 -right-5 bg-white p-3 rounded-lg shadow-lg border border-gray-100">
+                        <i class="fas fa-heart text-red-500 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-2/3 md:pl-12">
+                <h3 class="text-2xl font-semibold mb-6">Who am I?</h3>
+                <p class="text-gray-600 mb-6">
+                    I'm a passionate developer with over 2 years of experience creating digital applications. 
+                    My journey in web development started when I was in highschool when I realized I really love programming.
+                    Since then I went to Southeast Technical College to pursue my passion.
+                </p>
+                <p class="text-gray-600 mb-8">
+                    When I'm not coding, you can find me attending car meets, playing videogames, or experimenting with new 
+                    strategies for games. I believe in continuing education and staying updated with the latest technologies 
+                    to highten civilization 
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex items-center">
+                        <div class="mr-4 text-blue-500">
+                            <i class="fas fa-user-graduate text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Education</h4>
+                            <p class="text-gray-600">Computer Science</p>
+                            <p class="text-gray-600">Southeast Technical College</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="mr-4 text-purple-500">
+                            <i class="fas fa-briefcase text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Experience</h4>
+            <p class="text-gray-600">2+ Years</p>
+            <p class="text-gray-600">Full Stack Web Developer</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="mr-4 text-green-500">
+            <i class="fas fa-project-diagram text-2xl"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Projects</h4>
+            <p class="text-gray-600">30+ Completed</p>
+            <p class="text-gray-600">Web & Mobile Apps</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="mr-4 text-yellow-500">
+            <i class="fas fa-trophy text-2xl"></i>
+          </div>
+          <div>
+            <h4 class="font-semibold">Achievements</h4>
+            <p class="text-gray-600">Graduated with a 3.0 gpa</p>
+            <p class="text-gray-600">Top Rated Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-gray-50">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl font-bold mb-4">My <span class="gradient-text">Skills</span></h2>
+    <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+    <p class="text-gray-600 max-w-2xl mx-auto">Some of the skills I have developed over the years</p>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div>
+      <h3 class="text-xl font-bold mb-6">Technical Skills</h3>
+      <div class="space-y-6">
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">HTML/CSS</span>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">JavaScript</span>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">React</span>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">Node.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div>
+      <h3 class="text-xl font-bold mb-6">Professional Skills</h3>
+      <div class="space-y-6">
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">Communication</span>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">Teamwork</span>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">Problem Solving</span>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="font-medium">Creativity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mt-16">
+    <h3 class="text-xl font-semibold mb-8 text-center">Tools & Technologies</h3>
+    <div class="flex flex-wrap justify-center gap-6">
+      <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+        <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+        <span class="text-sm font-medium">HTML5</span>
+      </div>
+      <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+        <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
+        <span class="text-sm font-medium">CSS3</span>
+      </div>
+      <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+        <i class="fab fa-js text-4xl text-yellow-500 mb-2"></i>
+        <span class="text-sm font-medium">JavaScript</span>
+      </div>
+      <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+        <i class="fab fa-react text-4xl text-blue-400 mb-2"></i>
+        <span class="text-sm font-medium">React</span>
+      </div>
+      <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+        <i class="fab fa-node-js text-4xl text-green-500 mb-2"></i>
+        <span class="text-sm font-medium">Node.js</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl font-bold mb-4">My <span class="gradient-text">Projects</span></h2>
+    <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+    <p class="text-gray-600 max-w-2xl mx-auto">Some of my recent work and case studies</p>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Project 1 -->
+    <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300">
+      <div class="h-48 overflow-hidden">
+        <img src="Shiny.jpg" 
+             alt="Shiny Pokemon" 
+             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+      </div>
+      <div class="p-6">
+        <div class="flex justify-between items-start mb-3">
+          <h3 class="text-xl font-bold">Automatic Pokemon Bot</h3>
+          <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Python</span>
+        </div>
+        <p class="text-gray-600 mb-4">A bot I threw together with a group of friends to use machine vision to automatically play pokemon and hunt for rare pokemon</p>
+        <div class="flex justify-between items-center">
+          <a href="ShinyHunter.Html" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+            View Project <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <div class="flex space-x-2">
+            <a href="https://github.com/Switchblade4703/Pokemon-Shiny-Hunter" class="text-gray-400 hover:text-blue-500">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project 2 -->
+    <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300">
+      <div class="h-48 overflow-hidden">
+        <img src="Odayssey.png" 
+             alt="Travel App" 
+             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+      </div>
+      <div class="p-6">
+        <div class="flex justify-between items-start mb-3">
+          <h3 class="text-xl font-bold">Odayssey</h3>
+          <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Mobile</span>
+        </div>
+        <p class="text-gray-600 mb-4">This is a self health care app made by a group of friends, we made it to help with motivation and depression</p>
+        <div class="flex justify-between items-center">
+          <a href="Odayssey.html" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+            View Project <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <div class="flex space-x-2">
+            <a href="https://github.com/WMBYBE/Odayssey" class="text-gray-400 hover:text-blue-500">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project 3 -->
+    <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300">
+      <div class="h-48 overflow-hidden">
+        <img src="codeReview.jpg" 
+             alt="Code Review" 
+             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+      </div>
+      <div class="p-6">
+        <div class="flex justify-between items-start mb-3">
+          <h3 class="text-xl font-bold">Code Reviews</h3>
+          <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">ASP.net</span>
+        </div>
+        <p class="text-gray-600 mb-4">A code review that i applied skills from learning in ASP.net</p>
+        <div class="flex justify-between items-center">
+          <a href="CodeReview.html" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+            View Project <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <div class="flex space-x-2">
+            <a href="https://github.com/WMBYBE/CodeReview" class="text-gray-400 hover:text-blue-500">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+    <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-6"></div>
+    <p class="text-gray-600 max-w-2xl mx-auto">Feel free to reach out for collaborations or just a friendly hello</p>
+  </div>
+  
+  <div class="flex flex-col md:flex-row gap-12">
+    <div class="md:w-1/2">
+      <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+      <p class="text-gray-600 mb-8">
+        I'm currently available for freelance projects or full-time positions. If you have a project that needs expertise, I'd love to hear about it.
+      </p>
+      
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div class="bg-blue-100 p-3 rounded-full mr-4">
+            <i class="fas fa-envelope text-blue-500"></i>
+          </div>
+          <div>
+            <h4 class="font-medium">Email</h4>
+            <p class="text-gray-600">Blade.Lindner@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="bg-purple-100 p-3 rounded-full mr-4">
+            <i class="fas fa-phone-alt text-purple-500"></i>
+          </div>
+          <div>
+            <h4 class="font-medium">Phone</h4>
+            <p class="text-gray-600">+1 (605) 941-3301</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="bg-green-100 p-3 rounded-full mr-4">
+            <i class="fas fa-map-marker-alt text-green-500"></i>
+          </div>
+          <div>
+            <h4 class="font-medium">Location</h4>
+            <p class="text-gray-600">Sioux Falls, SD</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="md:w-1/2">
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <a href="#" class="text-xl font-bold gradient-text">Blade Lindner</a>
+        <p class="text-gray-400 mt-2">Creating digital experiences that matter.</p>
+      </div>
+      <div class="flex space-x-6">
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Blade Lindner. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-500 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-blue-600">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+  
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: 'smooth'
+        });
+        
+        // Close mobile menu if open
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  });
+  
+  // Back to top button
+  const backToTopButton = document.getElementById('back-to-top');
+  
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      backToTopButton.classList.remove('opacity-0', 'invisible');
+      backToTopButton.classList.add('opacity-100', 'visible');
+    } else {
+      backToTopButton.classList.remove('opacity-100', 'visible');
+      backToTopButton.classList.add('opacity-0', 'invisible');
+    }
+  });
+  
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  
+  // Animate elements when they come into view
+  const animateOnScroll = () => {
+    const elements = document.querySelectorAll('.animate-fade-in');
+    
+    elements.forEach(element => {
+      const elementPosition = element.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      
+      if (elementPosition < screenPosition) {
+        element.classList.add('animate-fade-in');
+      }
+    });
+  };
+  
+  window.addEventListener('scroll', animateOnScroll);
+  window.addEventListener('load', animateOnScroll);
+</script>
+</body>
+</html>
